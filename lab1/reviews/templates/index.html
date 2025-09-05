@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a la app de reviws</title>
+    <title>Inicio | Reviews</title>
+    <style>
+        :root {
+            --verde: #27ae60;
+            --morado: #8e44ad;
+            --negro: #222;
+            --gris: #fafafa;
+            --blanco: #fff;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--gris);
+            color: var(--negro);
+        }
+        header {
+            padding: 1rem;
+            text-align: center;
+            background: var(--blanco);
+            border-bottom: 2px solid var(--morado);
+        }
+        header h1 {
+            color: var(--morado);
+        }
+        main {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: var(--blanco);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(39,174,96,0.08);
+            border: 1px solid var(--verde);
+        }
+        nav a {
+            color: var(--verde);
+            background: var(--morado);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover {
+            background: var(--verde);
+            color: var(--blanco);
+        }
+        @media (max-width: 600px) {
+            main {
+                margin: 1rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Reviews</h1>
+    <header>
+        <h1>Bienvenido a Reviews</h1>
+    </header>
+    <main>
+        <p>Explora las reseñas o agrega la tuya.</p>
+        <nav>
+            <a href="{% url 'list_reviews' %}">Ver Reseñas</a>
+            <a href="{% url 'add_review' %}">Agregar Reseña</a>
+        </nav>
+    </main>
 </body>
 </html>

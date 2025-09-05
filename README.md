@@ -1,10 +1,15 @@
 # primera_aplicacion_django
 
-Este proyecto es una pequeña aplicación inicial creada con Django, como parte del curso de desarrollo web en el instituto CIBERTEC.
+Esta es una aplicación web sencilla desarrollada con Django como parte del curso en el instituto CIBERTEC. Permite a los usuarios agregar y visualizar reseñas de manera fácil y rápida.
 
 ## Descripción
 
-La aplicación tiene como objetivo aprender los conceptos básicos de Django, como la creación de proyectos, configuración inicial y ejecución del servidor de desarrollo.
+La aplicación cuenta con tres páginas principales:
+- **Inicio:** Presenta la aplicación y permite navegar entre las secciones.
+- **Lista de Reseñas:** Muestra todas las reseñas registradas.
+- **Agregar Reseña:** Permite a los usuarios enviar una nueva reseña mediante un formulario.
+
+El diseño es minimalista y responsivo, utilizando una paleta de colores verde, morado y negro para una experiencia visual moderna y agradable.
 
 ## Requisitos
 
@@ -29,7 +34,7 @@ La aplicación tiene como objetivo aprender los conceptos básicos de Django, co
 
 ## Uso
 
-Abre tu navegador y visita `http://127.0.0.1:8000/` para ver la aplicación funcionando.
+Abre tu navegador y visita `http://127.0.0.1:8000/` para ver la aplicación funcionando. Desde ahí puedes navegar entre las páginas de inicio, lista de reseñas y agregar reseña.
 
 ---
 
